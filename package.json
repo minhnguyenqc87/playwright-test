@@ -1,0 +1,25 @@
+{
+  "name": "test-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.9",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "playwright": "^1.51.0",
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "test:us1": "playwright test tests/specs/user-story-1.spec.ts",
+    "test:us2": "playwright test tests/specs/user-story-2.spec.ts",
+    "test:e2e": "playwright test tests/specs/ctflearn.spec.ts",
+    "test:api": "playwright test tests/specs/api-flow.spec.ts",
+    "test:all-e2e": "playwright test tests/specs/ctflearn.spec.ts tests/specs/api-flow.spec.ts",
+    "test:qa-us1": "cross-env NODE_ENV=qa playwright test tests/specs/user-story-1.spec.ts --config=./playwright.config.ts",
+    "test:dev-us2": "cross-env NODE_ENV=dev playwright test tests/specs/user-story-2.spec.ts --config=./playwright.config.ts",
+    "test:dev-all": "cross-env NODE_ENV=dev playwright test --config=./playwright.config.ts",
+    "report": "playwright show-report"
+  }
+}

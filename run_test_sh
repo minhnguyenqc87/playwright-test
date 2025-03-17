@@ -1,0 +1,22 @@
+#!/bin/bash
+export PATH="/home/jenkins/node_modules/.bin:$PATH"
+# JOB_NAME is the name of the project of this build. This is the name you gave your job. It is set up by Jenkins
+COMPOSE_ID=${JOB_NAME:-local}
+BRANCH_NAME=${BRANCH:-main}
+
+ENV_FILE="/home/jenkins/playwright_automation_test_env"
+
+
+# source /home/jenkins/.bashrc
+cp -f $ENV_FILE $WORKSPACE/.env
+yarn install --ignore-platform --ignore-engines
+echo "===== Run Test Scenarios & Generate report to Slack ====="
+yarn test:us1
+yarn test:us2
+yarn test:api
+yarn test:e2e
+
+
+status=$?
+
+exit ${status}
