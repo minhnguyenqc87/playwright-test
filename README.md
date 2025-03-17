@@ -1,7 +1,7 @@
 # A. Modern QA Mindset
 
 ##  1. Test Automation Solution
-###Propose a high-level, comprehensive test Automation Strategy:
+### Propose a high-level, comprehensive test Automation Strategy:
 
 **1. Implementation Plan**
 
@@ -85,7 +85,7 @@ Run all test           # yarn test:all
 **Test Management**
 - Jira: Bug Tracking, Agile Project Management
 - Google Docs, Sheets and Slides: for documentations, auto test activities diagram, timeline
-###How would you integrate automation into CI/CD pipelines?
+### How would you integrate automation into CI/CD pipelines?
 Based on this Pipeline Structure below:
 ```
 properties([pipelineTriggers()])        # Schedules the pipeline to run automatically
@@ -105,7 +105,7 @@ stages {
 }
 }
 ```
-###How do you ensure maintainability and scalability of the automation framework?
+### How do you ensure maintainability and scalability of the automation framework?
 Make sure my code is organized by following as below:
 - Set it up as Page Object Model
 - Test Layer for each page as example below:
@@ -131,7 +131,7 @@ specs/                      # Test Specifications
 -   Detecting duplication test data, selectors, test cases
 -   Recommend for test coverage optimizations, summarize the test result
 ### What AI-powered tools or methodologies would you use for intelligent test execution,
-###predictive defect analysis, and self-healing tests?
+### predictive defect analysis, and self-healing tests?
 Maybe there have other AI powered-tool have better support but i would like to introduce these tools as below:
 **Intelligent Test Execution: Applitools**
 -   Visual AI testing
@@ -161,7 +161,7 @@ Maybe there have other AI powered-tool have better support but i would like to i
 It's really reduced testing time, so we focused on testing efforts and proactive on issue detect.
 ##  3. Performance & Security Assurance
 ### How do you ensure that your team is building a product that meets performance
-###expectations under real-world conditions?
+### expectations under real-world conditions?
 As my thought so:
 
 *Clear Metrics*
@@ -178,20 +178,20 @@ As my thought so:
 -   Video/Short Video loading speeds (no interruption)
 
 ### What strategies and tools would you use to test and monitor system performance, especially
-###for high-frequency trading scenarios?
+### for high-frequency trading scenarios?
 -   Performance Test: JMeter
 -   Monitoring: New Relic
 
 ### How do you ensure security testing is embedded into the development lifecycle to identify
-###and mitigate potential vulnerabilities?
+### and mitigate potential vulnerabilities?
 No answer
 
 ### What best practices would you follow to comply with security and regulatory standards in an
-###online trading platform?
+### online trading platform?
 No answer
 
 ##  4. Efficient Shift-Left Testing
-###How would you apply Shift-Left Testing efficiently in the software development lifecycle?
+### How would you apply Shift-Left Testing efficiently in the software development lifecycle?
 As my experience, i will apply Shift-Left Testing as early as i can
 Based on SDLC:
 -   At Requirement phase: Make sure the requirement is clear, might found gaps before next phase begin.
@@ -201,13 +201,13 @@ Based on SDLC:
 -   Testing phase: automate regrgesssion test suits to reduce time for manual exploration, execute e2e workflow and corner cases.
 
 ### How can QA collaborate with developers and product teams to enhance early-stage
-###quality assurance?
+### quality assurance?
 -   Proactive and involve on any stage/phase of SDLC not just testing.
 -   Open communication to make sure everyone understand requirements and risks.
 -   Meetings are good for clarify, define acceptance criteria, identify risks.(QA, Devs and PO)
 
 ### How do you ensure that Unit Testing, Static Code Analysis, and Early Non-Functional
-###Testing are effectively integrated into development workflows?
+### Testing are effectively integrated into development workflows?
 These practices, when embedded early and consistently (aligned with Shift-Left principles), improve code quality, catch defects sooner, and ensure the system meets performance, security, and reliability goals.
 -   Shift Left Testing: Introduce these practices at the earliest stages (coding, build).
 -   Automation: Minimize manual effort with tools in workflows.
