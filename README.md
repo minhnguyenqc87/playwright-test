@@ -33,7 +33,7 @@ framework/
 │   ├── pages/                  # Page Objects
 │   ├── core/                   # Framework Core
 │   │   ├── models/             # Test Data Models
-│   │   ├── fixtures/           # Custom Fixtures
+
 │   │   │   └── globalSetup
 │   │   │── helpers/            # Utility Functions
 │   │   ├── setup/              # Global Setup
@@ -198,7 +198,7 @@ Based on SDLC:
 -   Design phase: APi have clear endpoint yet? Validate design document to ensure it's testable. 
 -   Develop (Coding phase): create automated test script for API/UI
 -   Build & Integration (CI/CD): validate quality on every build/change. 
--   Testing phase: automate regrgesssion test suits to reduce time for manual exploration, execute e2e workflow and corner cases.
+-   Testing phase: automate regresssion test suits to reduce time for manual exploration, execute e2e workflow and corner cases.
 
 ### How can QA collaborate with developers and product teams to enhance early-stage
 ### quality assurance?
