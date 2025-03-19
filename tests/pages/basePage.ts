@@ -94,7 +94,7 @@ export class BasePage {
           value
         );
       }
-    } catch (error) {
+    } catch (error: any) {
       throw new Error(
         `This selector or text '${value}' is not clickable: ${error.message}`
       );

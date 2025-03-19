@@ -20,6 +20,8 @@
     "test:qa-us1": "cross-env NODE_ENV=qa playwright test tests/specs/user-story-1.spec.ts --config=./playwright.config.ts",
     "test:dev-us2": "cross-env NODE_ENV=dev playwright test tests/specs/user-story-2.spec.ts --config=./playwright.config.ts",
     "test:dev-all": "cross-env NODE_ENV=dev playwright test --config=./playwright.config.ts",
+    "test:login": "playwright test tests/specs/login.spec.ts",
+    "test:login:qa": "cross-env NODE_ENV=qa playwright test tests/specs/login.spec.ts --config=./playwright.config.ts",
     "report": "playwright show-report"
   }
 }
